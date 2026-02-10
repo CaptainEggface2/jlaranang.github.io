@@ -16,7 +16,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   background-color: lightgoldenrodyellow;
   padding: 10px;
 }
@@ -55,14 +55,11 @@ td {
     border-radius: 10px; 
     position: sticky;
     top: 1px;  
-    grid-column: 1 / -1;   /* span all columns */
-    justify-self: center;  /* center within the grid */
     font-family: "Kablammo", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
         "MORF" 0;
-
 
 }
