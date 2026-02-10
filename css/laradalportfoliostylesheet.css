@@ -1,0 +1,67 @@
+header,
+        main,
+        aside,
+        section{
+            padding: 1rem;
+            border: 3px double darkgreen;
+            margin: 2rem;
+            border-radius: 10px;
+        }
+
+
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+}
+
+h1 {
+        text-align: center;
+        color: darkgreen;
+        font-family: Papyrus, cursive;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+h2 {
+    color: darkgreen;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    border: 1px solid #333;
+    padding: 0.5rem;
+    text-align: left;
+}
+.nav {
+    text-align: center;
+    padding: 1rem;
+    border: 6px double darkgreen;
+    background-color: lightgoldenrodyellow;
+    max-width: 380px;   
+    margin: 0 auto;     
+    border-radius: 10px; 
+    position: sticky;
+    top: 1px;  
+    grid-column: 1 / -1;   /* span all columns */
+    justify-self: center;  /* center within the grid */
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 0;
+
+}
