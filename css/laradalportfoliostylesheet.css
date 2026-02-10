@@ -16,7 +16,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   background-color: lightgoldenrodyellow;
   padding: 10px;
 }
@@ -63,5 +63,6 @@ td {
     font-style: normal;
     font-variation-settings:
         "MORF" 0;
+
 
 }
