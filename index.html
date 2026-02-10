@@ -41,6 +41,85 @@
 
     </style>
 </head>
+
+<button type="button"
+    onclick="darkMode()"
+>   
+    Dark Mode
+</button>
+
+
+<button type="button"
+    onclick="lightMode()"
+>   
+    Light Mode
+</button>
+
+
+<script>
+
+    function darkMode() {
+        
+        document.querySelectorAll("p").forEach(p => {
+            p.style.color = "white";
+        });
+        document.querySelectorAll("li").forEach(p => {
+            p.style.color = "white";
+        });
+        document.querySelectorAll("tr").forEach(p => {
+            p.style.color = "white";
+        });
+        document.querySelectorAll("h1").forEach(p => {
+            p.style.color = "lightgoldenrodyellow";
+        });
+        document.querySelectorAll("h2").forEach(p => {
+            p.style.color = "lightgoldenrodyellow";
+        });
+
+        document.body.style.backgroundColor = "rgb(0, 45, 0)";
+        document.getElementsByClassName("container")[0].style.backgroundColor = "rgb(0, 45, 0)";
+        document.getElementsByClassName("nav")[0].style.backgroundColor = "rgb(0, 45, 0)";
+        document.getElementsByClassName("nav")[0].style.borderColor = "lightgoldenrodyellow";
+        document.getElementById("bio").style.borderColor = "lightgoldenrodyellow";
+        document.getElementById("education").style.borderColor = "lightgoldenrodyellow";
+        document.getElementById("skills").style.borderColor = "lightgoldenrodyellow";
+        document.getElementById("socials").style.borderColor = "lightgoldenrodyellow";
+        //document.getElementsByTagName("h1").style
+
+
+    }
+
+    function lightMode() {
+        
+        document.querySelectorAll("p").forEach(p => {
+            p.style.color = "black";
+        });
+        document.querySelectorAll("li").forEach(p => {
+            p.style.color = "black";
+        });
+        document.querySelectorAll("tr").forEach(p => {
+            p.style.color = "black";
+        });
+        document.querySelectorAll("h1").forEach(p => {
+            p.style.color = "darkgreen";
+        });
+        document.querySelectorAll("h2").forEach(p => {
+            p.style.color = "darkgreen";
+        });
+
+        document.body.style.backgroundColor = "lightgoldenrodyellow";
+        document.getElementsByClassName("container")[0].style.backgroundColor = "lightgoldenrodyellow";
+        document.getElementsByClassName("nav")[0].style.backgroundColor = "lightgoldenrodyellow";
+        document.getElementsByClassName("nav")[0].style.borderColor = "darkgreen";
+        document.getElementById("bio").style.borderColor = "darkgreen";
+        document.getElementById("education").style.borderColor = "darkgreen";
+        document.getElementById("skills").style.borderColor = "darkgreen";
+        document.getElementById("socials").style.borderColor = "darkgreen";
+
+    }
+
+</script>
+
 <body>
     <h1>Jethro Laranang's Portfolio</h1>
     <div style="display: flex; justify-content: center;"> 
@@ -48,6 +127,7 @@
     </div>
 
     <ul class="nav">
+        <a href="#bio">Bio</a> |
         <a href="#education">Educational Background</a> | 
         <a href="#skills">My Skills</a> | 
         <a href="#socials">Socials</a>
