@@ -11,12 +11,12 @@ header,
 
 
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: lightgoldenrodyellow !important;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   background-color: lightgoldenrodyellow;
   padding: 10px;
 }
@@ -50,7 +50,7 @@ td {
     padding: 1rem;
     border: 6px double darkgreen;
     background-color: lightgoldenrodyellow;
-    max-width: 380px;   
+    max-width: 400px;   
     margin: 0 auto;     
     border-radius: 10px; 
     position: sticky;
